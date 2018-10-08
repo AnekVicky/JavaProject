@@ -7,7 +7,12 @@ public static void main(String[] args) {
 	
 	
 	var list = List.of("New","Style","of","wrtting","list");
-	list.stream().forEach(System.out::print);
+	list.stream().forEach(System.out::println);
 	
+	String option = list.stream()
+	     .reduce((s,e) ->s.concat(e))
+	     .orElse("Hey Default Value ");
+
+	System.out.println("Groﬂbritannien : "+option );
 }
 }
