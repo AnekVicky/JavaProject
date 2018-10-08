@@ -9,10 +9,10 @@ public static void main(String[] args) {
 	var list = List.of("New","Style","of","wrtting","list");
 	list.stream().forEach(System.out::println);
 	
-	String option = list.stream()
+	var option = list.stream()
 	     .reduce((s,e) ->s.concat(e))
 	     .orElse("Hey Default Value ");
 
-	System.out.println("Groﬂbritannien : "+option );
+	System.out.println("Gro√übritannien : "+option );
 }
 }
